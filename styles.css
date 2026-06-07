@@ -145,7 +145,6 @@ main{
   color:var(--green);
   font-size:14px;
   opacity:1;
-  text-decoration:underline;
   text-underline-offset:3px;
 }
 
