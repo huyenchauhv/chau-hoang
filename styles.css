@@ -360,6 +360,15 @@ main{
    PROJECT PAGE
 ========================= */
 
+.project-hero-image{
+  margin-bottom:3rem;
+}
+
+.project-hero-image img{
+  width:100%;
+  display:block;
+}
+
 .project-layout{
   display:grid;
 
