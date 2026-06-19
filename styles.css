@@ -207,8 +207,26 @@ main{
 ========================= */
 
 .home-hero{
-  max-width:620px;
+  display:grid;
+  grid-template-columns:
+    minmax(0,1fr)
+    360px;
+
+  gap:80px;
+
+  align-items:start;
+
   margin-bottom:68px;
+}
+
+.home-intro{
+  max-width:620px;
+}
+
+.homepage-sudoku{
+  width:270px;
+  justify-self:end;
+  margin-top:65px;
 }
 
 .home-archive {
@@ -217,7 +235,7 @@ main{
 }
 
 .home-empty {
-    min-height: 25vh;
+   min-height:0;
 }
 
 .home-empty::after{
@@ -666,6 +684,55 @@ text-decoration:underline;
 .about-download a{
   color:var(--green);
   text-decoration:underline;
+}
+
+.homepage-sudoku{
+  max-width:420px;
+  margin-bottom:120px;
+}
+
+#sudoku-board{
+  display:grid;
+  grid-template-columns:repeat(9,1fr);
+  width:270px;
+}
+
+.sudoku-cell{
+  width:30px;
+  height:30px;
+
+  border:1px solid var(--line);
+
+  background:transparent;
+
+  text-align:center;
+
+  font-family:'IBM Plex Mono', monospace;
+  font-size:14px;
+}
+
+.sudoku-cell.given{
+  font-weight:500;
+}
+
+.sudoku-cell.correct{
+  color:var(--green);
+}
+
+.sudoku-cell.wrong{
+  color:#b2493d;
+}
+
+.sudoku-cell.active{
+  background:#eef1eb;
+}
+
+.box-right{
+  border-right:2px solid var(--green);
+}
+
+.box-bottom{
+  border-bottom:2px solid var(--green);
 }
 
 /* =========================
