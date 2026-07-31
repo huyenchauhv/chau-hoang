@@ -744,49 +744,94 @@ main {
   }
 
   #main {
-    padding-top: 132px;
+    padding-top: 110px;
+    padding-bottom: 70px;
   }
 
+  /* ---------- Header ---------- */
+
+  .site-nav {
+    gap: 20px;
+  }
+
+  .header-right {
+    gap: 28px;
+  }
+
+  /* ---------- Typography ---------- */
+
   .site-title {
-    font-size: 42px;
+    font-size: 58px;
+    line-height: 0.9;
+    margin-bottom: 18px;
   }
 
   .page-title {
-    font-size: 3rem;
+    font-size: 48px;
+    line-height: 0.95;
+    margin-bottom: 32px;
   }
+
+  /* ---------- Homepage ---------- */
+
+  .home-hero {
+    display: block;
+    max-width: none;
+    margin-bottom: 56px;
+  }
+
+  .home-intro {
+    max-width: none;
+  }
+
+  .home-intro p {
+    max-width: none;
+  }
+
+  .home-archive {
+    margin-top: 28px;
+  }
+
+  .homepage-sudoku {
+    display: none;
+    /* hoặc:
+    margin-top:48px;
+    display:block;
+    */
+  }
+
+  .home-empty {
+    min-height: 0;
+  }
+
+  /* ---------- Archive ---------- */
 
   .archive-row {
     grid-template-columns:
-      70px
+      64px
       1fr
-      22px;
+      20px;
+
     gap: 18px;
-    min-height: 64px;
+    min-height: 60px;
   }
 
   .related-projects .archive-row {
     grid-template-columns:
-      70px
+      64px
       1fr
-      22px;
+      20px;
   }
 
   .archive-type {
     display: none;
   }
 
-  .site-nav {
-    gap: 22px;
-  }
-
-  .elsewhere-row {
-    gap: 28px;
-    flex-wrap: wrap;
-  }
+  /* ---------- Project ---------- */
 
   .project-layout {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 48px;
   }
 
   .project-sidebar {
@@ -794,7 +839,35 @@ main {
     top: auto;
   }
 
+  .project-title {
+    font-size: 42px;
+    margin-bottom: 28px;
+  }
+
   .project-gallery {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+
+  .structure-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  /* ---------- Elsewhere ---------- */
+
+  .elsewhere {
+    margin-left: 0;
+  }
+
+  .elsewhere-row {
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .section-title {
+    width: 100%;
+    margin-bottom: 6px;
   }
 }
